@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/index.css">
+  <script defer type="module" src="assets/js/index.js"></script>
+  <title>Sorts</title>
+</head>
+<body>
+  <main>
+    <h1>Угадай число</h1>
+    <div class="description">Угадайте число от 1 до 100</div>
+    <form id="main_form">
+      <label id="main_label">Введите число:</label>
+      <input id="main_input" type="text">
+      <button id="main_button">Проверить</button>
+    </form>
+      <div class="info">
+        <div>
+          Подсказка:
+        </div>
+        <div>
+          Попытки: 0
+        </div>
+      </div>
+    <button id="settings"><img src="./assets/img/options.png"></button>
+    <form id="settings_form">
+      <div>
+        <label id="settings_label">Диапазон</label>
+        <input type="text" placeholder='Формат: 1-100' id="settings_input">
+      </div>
+      <button id="settings_button">Начать</button>
+    </form>
+  </main>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/index.css">
+  <script defer type="module" src="assets/js/index.js"></script>
+  <title>Player</title>
+</head>
+<body>
+  <main>
+    <section class="song_card">
+      <div class="song_img">
+        <img src="./assets/img/audio.png">
+      </div>
+      <div class="song_name"></div>
+      <div class="wrapper_line">
+        <div class="current_time"></div>
+        <div id="waveform">
+          <audio id="audio"></audio>
+        </div>
+        <div class="full_time"></div>
+      </div>
+      <div class="wrapper_controls">
+        <div class="repeat">
+          <img src="./assets/img/repeat.png" alt="repeat_btn">
+        </div>
+        <div class="shuffle">
+          <img src="./assets/img/shuffle.png" alt="section_btn">
+        </div>
+        <div class="prev">
+          <img src="./assets/img/back.png">
+        </div>
+        <div class="play">
+          <img>
+        </div>
+        <div class="next">
+          <img src="./assets/img/forward.png">
+        </div>
+        <div class="volume">
+          <img class="volume_img" src="./assets/img/volume.png">
+          <input type="range" max="100" min="0">
+        </div>
+      </div>
+      <div class="wrapper_wave">
+        <canvas id="animation_wave"></canvas>
+      </div>
+    </section>
+    <section class="song_list">
+      <h2>Список треков</h2>
+      <div class="list_wrapper">
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/gh/foobar404/wave.js/dist/bundle.js"></script>
+</body>
+</html>

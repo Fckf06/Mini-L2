@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles/index.css">
+  <script defer type="module" src="assets/js/index.js"></script>
+  <title>Meme generator</title>
+</head>
+<body>
+  <main>
+    <section class="canvas-wrapper">
+      <canvas width="400" height="400" id="canvas"></canvas>
+    </section>
+
+    <section>
+      <h1>Meme generator</h1>
+      <div class="buttons_wrapper">
+        <input name="file" type="file">
+        <label for="file" class="add_img">Add image</label>
+        <button class="add_text" id="add_btn">Add text</button>
+        <a class="dnwld" download="">Download</a>
+        <div class="text_delete">
+          <img src="./assets/img/delete.png">
+        </div>
+      </div>
+      <div class="inputs_wrapper">
+        <form class="text_inputs">
+
+          <div class="text_input">
+            <input id="top_text" placeholder="Top text">
+            <input value="#FFFFFF" class="font_color" type="color">
+            <input value="#000000" class="outline_color" type="color">
+            <div class="text_settings">
+              <img src="./assets/img/gear-option.png">
+            </div>
+
+            <div class="text_modal">
+              <div class="font_shadow">
+                <label>Font shadow:</label>
+                <input class="input_shadow" type="checkbox">
+              </div>
+              <div class="font_size">
+                <label>Font size:</label>
+                <input class="input_size">
+              </div>
+              <div class="line_width">
+                <label>Line width:</label>
+                <input class="input_width">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="text_input">
+            <input id="bottom_text" placeholder="Bottom text">
+            <input value="#FFFFFF" class="font_color" type="color">
+            <input value="#000000" class="outline_color" type="color">
+            <div class="text_settings">
+              <img src="./assets/img/gear-option.png">
+            </div>
+            <div class="text_modal">
+              <div class="font_shadow">
+                <label>Font shadow:</label>
+                <input class="input_shadow" type="checkbox">
+              </div>
+              <div class="font_size">
+                <label>Font size:</label>
+                <input class="input_size">
+              </div>
+              <div class="line_width">
+                <label>Line width:</label>
+                <input class="input_width">
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+
+    </section>
+  </main>
+
+</body>
+</html>

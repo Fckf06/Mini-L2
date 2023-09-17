@@ -1,0 +1,38 @@
+
+.TodoForm {
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+
+}
+.TodoForm > input {
+  border: 2px solid black;
+  border-right: none;
+  width: 220px;
+  padding: 10px;
+  font-size: 1rem;
+}
+.TodoForm > input:nth-child(1) {
+  width: 100%;
+}
+.TodoForm > button {
+  font-size: 2.5rem;
+  border: 2px solid black;
+}
+.TodoForm > button:hover {
+  color: rgb(0, 193, 97);
+  transition: 0.1s;
+}
+.TodoForm > button:active {
+  color: rgb(0, 249, 124);
+  transition: 0.1s;
+}
+
+.TodoForm > span {
+  position: absolute;
+  font-size: 13px;
+  color:red;
+  font-weight: 700;
+  top: 45px;
+  left: 5px;
+}

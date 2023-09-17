@@ -1,0 +1,8 @@
+.TodoList {
+  margin-top: 15px;
+  flex: 1 1 auto;
+}
+.TodoList > h2 {
+  font-weight: 700;
+  padding: 4px;
+}

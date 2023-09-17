@@ -1,0 +1,87 @@
+.Todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8px;
+  margin-top: 5px;
+  background-color: rgb(220, 220, 220);
+  animation: add-Todo 0.5s forwards;
+}
+
+.Todo > button {
+  font-size: 1.5rem;
+}
+.Todo button:hover {
+  color: rgb(0, 193, 97);
+  transition: 0.1s;
+}
+.Todo button:active {
+  color: rgb(0, 249, 124);
+  transition: 0.1s;
+}
+
+.Todo > div:nth-child(2) {
+  margin: 0 5px;
+  flex: 1 1 auto;
+}
+.Todo > div:nth-child(2) > div:nth-child(1) {
+  margin-bottom: 2px;
+  font-size: 10px;
+}
+.Todo > div:nth-child(2) > div:nth-child(1) > span {
+  margin-right: 5px;
+}
+.Todo > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+.Todo > div:nth-child(3) > div:nth-child(1) {
+  margin-right: 5px;
+}
+.Todo > div:nth-child(3) > div:nth-child(2) {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  /* padding: 2px; */
+  font-size: 10px;
+  font-weight: 500;
+  margin-right: 15px;
+}
+.Todo > div:nth-child(3) > div:nth-child(2) > span:nth-child(2) {
+  margin-top: 1px;
+}
+.Todo > div:nth-child(4) > button {
+  margin-left: 4px;
+}
+
+
+
+
+.fail {
+  color: rgb(255, 0, 0);
+}
+.success {
+  color: rgb(0, 249, 124);
+}
+.remove {
+  animation: remove-Todo  0.5s forwards;
+}
+
+@keyframes add-Todo{
+  0% {
+    transform: scale(0)
+  }
+  100% {
+    transform: scale(1) 
+  }
+}
+
+@keyframes remove-Todo{
+  0% {
+    transform: scale(1)
+  }
+  100% {
+    transform: scale(0) 
+  }
+}

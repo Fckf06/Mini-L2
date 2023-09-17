@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('./reset.css');
+
+body {
+  background: linear-gradient(to right, rgba(124, 89, 181, 1), rgba(105, 118, 227, 1));
+}
+main {
+  background-color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 200px auto;
+  padding: 30px 0;
+  max-width: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 2px black;
+  position: relative;
+}
+h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+.description {
+  margin-top: 10px;
+  font-weight: 500;
+  align-self: center;
+}
+
+#main_form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 10px;
+  padding: 40px 10px;
+}
+#main_label {
+  align-self: center;
+  margin-right: 10px;
+}
+input {
+  padding: 4px;
+  max-width: 150px;
+  border: 1px solid black;
+}
+button {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid black;
+  text-align: center;
+
+}
+#main_input {
+  padding: 5px 10px;
+}
+#main_input:focus {
+  outline: 1px solid rgba(124, 89, 181, 1);
+}
+
+#main_button {
+  width: 100px;
+  padding: 10px;
+  margin-left: 20px;
+  background: rgba(102, 51, 153, 1);
+  border-radius: 15px;
+  color: white;
+}
+#main_button:hover {
+  /* background-color: rgba(105, 118, 227, 1); */
+  box-shadow: 0 0 4px black;
+}
+#settings {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  border: 0;
+}
+#settings:hover {
+  opacity: 0.5;
+}
+#settings:active {
+  opacity: 1;
+}
+#settings_form {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-items: start;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 0 0 2px black;
+  border-radius: 20px;
+  background-color: rgba(102, 51, 153, 1);
+  display: none;
+}
+#settings_form.active {
+  display: flex;
+}
+#settings_form > label {
+  background-color: rgba(102, 51, 153, 1);
+}
+
+
+#settings_form > div {
+  display: flex;
+  flex-flow: column;
+
+}
+#settings_label {
+  margin: 0 auto 5px;
+  color: white;
+}
+input[type="text"] {
+ background: white;
+}
+input[type="text"]:focus {
+  outline: 1px solid rgba(105, 118, 227, 1);
+}
+#settings_form > button {
+  background: rgba(105, 118, 227, 1);
+  border: 1px solid rgba(105, 118, 227, 1);
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 10px;
+  color: white;
+}
+#settings_form > button:hover {
+  box-shadow: 0 0 1px white;
+  border-color: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 50px;
+}
+.info > div:nth-child(2) {
+  margin-top: 2px;
+}

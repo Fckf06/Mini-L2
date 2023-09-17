@@ -1,0 +1,49 @@
+.TodoProgress {
+  margin-top: 10px;
+}
+
+.TodoProgress  h4 {
+  font-weight: 600;
+  padding: 2px;
+}
+.TodoProgress div {
+  display: flex;
+  justify-content: space-between;
+}
+.TodoProgress  progress {
+  border-radius: 15px;
+  width: 200px;
+  height: 22px;
+  align-self: center; 
+}
+.TodoProgress progress::-webkit-progress-bar {
+  background-color: rgb(220, 220, 220);
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.TodoProgress  progress::-webkit-progress-value {
+  background: linear-gradient(to left, rgb(0, 193, 97), rgb(0, 249, 124));
+  border-radius: 15px;
+  transition: 1s;
+}
+.TodoProgress progress::-moz-progress-bar {
+  background-color: rgb(220, 220, 220);
+  border-radius: 15px;
+}
+.TodoProgress button {
+  background-color: rgb(246, 112, 193);
+  border-radius: 10px;
+  padding: 4px 8px; 
+  font-weight: 500;
+  margin: 0 2px;
+}
+.TodoProgress button:hover {
+  color: rgb(50, 222, 253);
+  transition: 0.1s;
+}
+.TodoProgress button:active {
+  color: rgb(0, 249, 124);
+  transition: 0.1s;
+  box-shadow: 0px 0px 4px rgb(0, 249, 124);
+}

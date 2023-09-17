@@ -1,0 +1,12 @@
+@import url('./assets/styles/reset.css');
+
+body {
+  background: linear-gradient(to bottom, #f670c1, #32defd);
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/index.css">
+  <script defer type="module" src="./assets/js/index.js"></script>
+  <title>Calculator</title>
+</head>
+<body>
+  <main>
+    <div class="wrapper">
+      <section class="products_list">
+        <h2>Список продуктов</h2>
+        <form class="filter_form">
+          <input id="filter" placeholder="Фильтр">
+          <button id="sort"><img src="../src/assets/img/sort-down.png"></button>
+          <button id="reset"><img src="../src/assets/img/clear.png"> </button>
+        </form>
+        <h3>Добавьте показатель</h3>
+        <form class="total_form">
+            <input placeholder="Количество ккал">
+            <button id="add_total"><img src="./assets/img/add.png"></button>
+        </form>
+        <h3>Добавить продукты</h3>
+        <form class="add_form">
+          <input placeholder="Название продукта">
+          <input placeholder="ккал">
+          <button id="add"><img src="./assets/img/add.png"></button>
+        </form>
+        <div class="list_wrapper">
+        </div>
+        <div class="total_sum"></div>
+      </section>
+      <section class="products_diagram">
+        <h2>Диаграмма</h2>
+        <div class="diagram_wrapper">
+          <canvas width="200" height="200"></canvas>
+          <div class="diagram_items"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
